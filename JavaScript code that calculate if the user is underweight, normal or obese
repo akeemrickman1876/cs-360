@@ -1,42 +1,36 @@
-let height = 0;
-let BMI = 0;
-let weight = 0;
+document.getElementById("calculateBMI").onclick=function(){
+
+var height = getElementById("heightInput")
+var weight = getElementById("weightInput")
+var BMI = 0;
 
 
 function getHeight () {
 console.log("Enter your height: ");
 }
 
-function setHeight(newHeight){
-height  =  newHeight;
-}
 
 function getWeight () {
 console.log("Enter your weight: ");
 }
 
-function setWeight(newWeight){
-weight  =  newWeight;
-}
-
-BMI = (708*weight)/(height*height);
-
-console.log (BMI)
-
 function calculateMetricBMI(weight, height)
 {
-  let BMI = (weight * height * height);
-  return BMI;
+  BMI = (708*weight)/(height*height);
   
+  console.log(BMI);
 }
+
 if (BMI<18.5){
-    return "You are underweight";}
+    console.log("You are underweight");}
     
 else if (BMI >=18.5 && BMI <= 24.9){
-    return "You are normal";}
+    console.log("You are normal");}
     
 else if (BMI >=25.0 && BMI <= 29.0){
-    return "You are overweight";}
+    console.log("You are overweight");}
     
 else if (BMI >=30.0){
-    return "You are obese";}
+    console.log("You are obese");}
+    
+}
