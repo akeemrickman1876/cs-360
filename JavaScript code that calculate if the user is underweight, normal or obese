@@ -30,7 +30,7 @@ else if (BMI >=18.5 && BMI <= 24.9){
 else if (BMI >=25.0 && BMI <= 29.0){
     console.log("You are overweight");}
     
-else if (BMI >=30.0){
+ if (BMI >=30.0){
     console.log("You are obese");}
     
 }
