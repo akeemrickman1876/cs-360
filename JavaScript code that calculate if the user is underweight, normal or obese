@@ -17,7 +17,6 @@ console.log("Enter your weight: ");
 function calculateMetricBMI(weight, height)
 {
   BMI = (708*weight)/(height*height);
-  
   console.log(BMI);
 }
 
